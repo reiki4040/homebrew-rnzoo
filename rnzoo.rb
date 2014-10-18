@@ -5,7 +5,7 @@ class Rnzoo < Formula
   homepage 'https://github.com/reiki4040/rnzoo'
 
   if OS.mac?
-    url 'https://github.com/reiki4040/rnzoo/releases/download/#{HOMEBREW_RNZOO_VERSION}/rnzoo-#{HOMEBREW_RNZOO_VERSION}-darwin-amd64.zip'
+    url "https://github.com/reiki4040/rnzoo/releases/download/#{HOMEBREW_RNZOO_VERSION}/rnzoo-#{HOMEBREW_RNZOO_VERSION}-darwin-amd64.zip"
     sha1 '203853d469537d925d90a25bdb9112e7e395b0ec'
   end
 
