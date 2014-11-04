@@ -10,7 +10,7 @@ class Rnzoo < Formula
     sha1 '40fb17013cff0b642ef8eafe506a878b4607d19f'
   end
 
-  version=HOMEBREW_RNZOO_VERSION
+  version HOMEBREW_RNZOO_VERSION
 
   depends_on 'peco'
 
