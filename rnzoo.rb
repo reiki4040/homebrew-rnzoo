@@ -1,13 +1,13 @@
 require "formula"
 
-HOMEBREW_RNZOO_VERSION="0.2.1"
+HOMEBREW_RNZOO_VERSION="0.2.2"
 
 class Rnzoo < Formula
   homepage 'https://github.com/reiki4040/rnzoo'
 
   if OS.mac?
     url "https://github.com/reiki4040/rnzoo/releases/download/#{HOMEBREW_RNZOO_VERSION}/rnzoo-#{HOMEBREW_RNZOO_VERSION}-darwin-amd64.zip"
-    sha1 '40fb17013cff0b642ef8eafe506a878b4607d19f'
+    sha1 '4b27d001ec77016031dc1832a3dd8300b020a37a'
   end
 
   version HOMEBREW_RNZOO_VERSION
