@@ -1,37 +1,38 @@
 require "formula"
 
-HOMEBREW_RNZOO_VERSION="0.2.2"
-
 class Rnzoo < Formula
+  desc "useful tool for EC2."
   homepage 'https://github.com/reiki4040/rnzoo'
+  version "0.3.0"
 
   if OS.mac?
-    url "https://github.com/reiki4040/rnzoo/releases/download/#{HOMEBREW_RNZOO_VERSION}/rnzoo-#{HOMEBREW_RNZOO_VERSION}-darwin-amd64.zip"
-    sha1 '4b27d001ec77016031dc1832a3dd8300b020a37a'
+    url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-" + version + "-darwin-amd64.zip"
+    sha256 'ad48c7986701921515d2e65852f234e1c6cd7d3c74b6c3c4cdbaf3447d5157d1'
   end
 
-  version HOMEBREW_RNZOO_VERSION
-
-  depends_on 'peco'
-
   def install
-    # rnssh, ec2list, ltsv_pipe
-    bin.install Dir['bin/*']
+    bin.install 'rnzoo'
   end
 
   # show message after installation.
   def caveats
     msg = <<-EOF.undent
     # rnzoo need AWS access key for working.
-    # Please set environment variable for AWS connection.
+	# Please set key/secret to AWS credentials (~/.aws/credentials)
+
+	[default]
+	aws_access_key_id=your_key_id
+	aws_secret_access_key=your_secret
+
+	# or environment variable for AWS connection.
     # (~/.bashrc, ~/.zshrc or other.)
 
-    export AWS_ACCESS_KEY_ID="YOUR AWS ACCESS KEY"
-    export AWS_SECRET_ACCESS_KEY="YOUR AWS SECRET ACCESS KEY"
+    export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY
+    export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 
     # Option: you can set default aws region.
 
-    export AWS_REGION="ap-northeast-1"
+    export AWS_REGION=ap-northeast-1
 
 EOF
   end
