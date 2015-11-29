@@ -18,21 +18,21 @@ class Rnzoo < Formula
   def caveats
     msg = <<-EOF.undent
     # rnzoo need AWS access key for working.
-	# Please set key/secret to AWS credentials (~/.aws/credentials)
+    # Please set key/secret to AWS credentials (~/.aws/credentials)
 
-	[default]
-	aws_access_key_id=your_key_id
-	aws_secret_access_key=your_secret
+    [default]
+    aws_access_key_id=your_key_id
+    aws_secret_access_key=your_secret
 
-	# or environment variable for AWS connection.
+    # or environment variable for AWS connection.
     # (~/.bashrc, ~/.zshrc or other.)
 
     export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY
     export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 
-    # Option: you can set default aws region.
+    # you can set default aws region.
 
-    export AWS_REGION=ap-northeast-1
+    rnzoo init
 
 EOF
   end
