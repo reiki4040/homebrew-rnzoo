@@ -6,7 +6,7 @@ class Rnzoo < Formula
   version "0.4.1"
 
   if OS.mac?
-    url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-" + version + "-darwin-amd64.tar.gz"
+    url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-v" + version + "-darwin-amd64.tar.gz"
     sha256 'ae6d03019357c30fa087fe75ebcaaf2275cfab108afcc8dae4fc0a880ad9e9e2'
   end
 
