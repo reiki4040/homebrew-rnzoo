@@ -3,11 +3,11 @@ require "formula"
 class Rnzoo < Formula
   desc "useful tool for EC2."
   homepage 'https://github.com/reiki4040/rnzoo'
-  version "0.4.0"
+  version "0.4.1"
 
   if OS.mac?
     url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-" + version + "-darwin-amd64.zip"
-    sha256 'b2fdf0a1ddc3e2348cdcc59e0d34e995b4c67197b0486427507bdfd65d3d5eab'
+    sha256 'ae6d03019357c30fa087fe75ebcaaf2275cfab108afcc8dae4fc0a880ad9e9e2'
   end
 
   def install
