@@ -3,8 +3,8 @@ class Rnzoo < Formula
   homepage "https://github.com/reiki4040/rnzoo"
   version "0.4.1"
   normal_sha256 = "ae6d03019357c30fa087fe75ebcaaf2275cfab108afcc8dae4fc0a880ad9e9e2"
-  devel_version = "0.5.0-dev4"
-  devel_sha256 = "a9ea32db8a2106470f5cf08738e54e04b741025f67061e3bc5934963d7f79bbf"
+  devel_version = "0.5.0-dev5"
+  devel_sha256 = "b4c64547f5b05264b2a6a120218c62adb4fd563846aa0a404f12c45dc6c46480"
 
   if OS.mac?
     url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-v" + version + "-darwin-amd64.tar.gz"
