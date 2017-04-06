@@ -1,13 +1,13 @@
 class Rnzoo < Formula
   desc "useful tool for EC2."
   homepage "https://github.com/reiki4040/rnzoo"
-  version "0.4.1"
-  normal_sha256 = "ae6d03019357c30fa087fe75ebcaaf2275cfab108afcc8dae4fc0a880ad9e9e2"
+  version "0.5.0"
+  normal_sha256 = "b26d023a2f4db4a73a40a6e8651bcf8ff7501b6259dd20e86c471e6553b3a0bb"
   devel_version = "0.5.0-dev6"
   devel_sha256 = "62e46f2a2ff0f3fb72dee99719c466a0a2f6fac423a6ecd27e40781dabb4a175"
 
   if OS.mac?
-    url "https://github.com/reiki4040/rnzoo/releases/download/v" + version + "/rnzoo-v" + version + "-darwin-amd64.tar.gz"
+    url "https://github.com/reiki4040/rnzoo/releases/download/" + version + "/rnzoo-" + version + "-darwin-amd64.tar.gz"
     sha256 normal_sha256
   end
 
