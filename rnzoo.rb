@@ -1,5 +1,5 @@
 class Rnzoo < Formula
-  desc "useful tool for EC2."
+  desc "Useful tool for EC2"
   homepage "https://github.com/reiki4040/rnzoo"
   version "0.5.0"
   normal_sha256 = "b26d023a2f4db4a73a40a6e8651bcf8ff7501b6259dd20e86c471e6553b3a0bb"
