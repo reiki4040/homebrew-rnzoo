@@ -4,7 +4,7 @@ class Rnzoo < Formula
   version "0.5.0"
   normal_sha256 = "b26d023a2f4db4a73a40a6e8651bcf8ff7501b6259dd20e86c471e6553b3a0bb"
   devel_version = "0.6.0-dev3"
-  devel_sha256 = "4c9355767eb73d565aaa853680046e433c22b7b63645c81ef280e11f91543a45"
+  devel_sha256 = "15377717830f1d993300bb453bc917f68d6aa5544ff1f544db714f927bad737d"
 
   if OS.mac?
     url "https://github.com/reiki4040/rnzoo/releases/download/" + version + "/rnzoo-" + version + "-darwin-amd64.tar.gz"
