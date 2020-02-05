@@ -46,6 +46,7 @@ class Rnzoo < Formula
 
   # test
   test do
-    # nothing
+    # dummy https://github.com/rcmdnk/homebrew-file/blob/master/brew-file.rb#L23
+    system "brew", "file", "help"
   end
 end
